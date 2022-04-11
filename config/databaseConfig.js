@@ -5,8 +5,8 @@ import utils from "util";
 const pool = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "hp@54321",
-    database: "db_chatify",
+    password: "your password",
+    database: "database name",
     port: 3306,
     connectionLimit: 5,
     debug: false,
