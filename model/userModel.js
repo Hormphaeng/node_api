@@ -23,8 +23,6 @@ export default {
         })
     },
     findByName: (username) => {
-        console.log("username", username);
-        console.log("this pool", pool);
         return new Promise((resolve, reject) => {
             let sql = `SELECT id, username, password FROM users WHERE username = ?`;
 
@@ -32,6 +30,7 @@ export default {
                 if (err) {
                     return reject(err);
                 }
+                // console.log(result);
                 return resolve(result);
             });
         });
